@@ -22,5 +22,6 @@ setup(
         'dash',
         'ipykernel',
         'tqdm',
+        'statsmodels',
     ]
 )
