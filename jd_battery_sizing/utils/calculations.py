@@ -53,7 +53,7 @@ def energy_by_demand(df: pd.DataFrame, interval_min: int = 15):
 
     # Other calcs
     df_output['TotalAnnualEnergy_kWh_'] = df_output['annual_energy_above_kwh'] + df_output['annual_energy_below_kwh']
-    df_output['FractionEnergyAbove_kWh_'] = df_output['annual_energy_above_kwh'] / df_output['TotalAnnualEnergy_kWh']
+    df_output['FractionEnergyAbove_kWh_'] = df_output['annual_energy_above_kwh'] / df_output['TotalAnnualEnergy_kWh_']
     df_output['TotalTime_min_'] = df_output['annual_min_above'] + df_output['annual_min_below']
     df_output['FractionTimeAbove_min_'] = df_output['annual_min_above'] / df_output['TotalTime_min_']
 
