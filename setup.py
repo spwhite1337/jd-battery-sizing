@@ -10,7 +10,7 @@ setup(
     install_requires=[
         'pandas',
         'numpy',
-        'xrld',
+        'xlrd',
         'flask',
         'flask-wtf',
         'flask-sqlalchemy',
