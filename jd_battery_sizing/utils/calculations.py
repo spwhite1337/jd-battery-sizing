@@ -12,9 +12,8 @@ def energy_by_demand(df: pd.DataFrame, interval_min: int = 15):
 
     calc_col = 'ApparentPowerMean_KW_'
     # outline cutoffs in 100 kW intervals from min to max of mean apparent power
-    min = df[calc_col].min()
-    max = df[calc_col].max()
-    cutoffs = np.linspace(min, max, (max - min) / 100)
+    min_calc, max_calc = df[calc_col].min(), df[calc_col].max()
+    cutoffs = np.linspace(min_calc, max_calc, (max_calc - min_calc) / 100)
 
     # For each cutoff sum the total energy and number of time intervals for kW-h
     logger.info('Calculating Energy Demands by Cutoff')
