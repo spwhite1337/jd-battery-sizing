@@ -8,4 +8,4 @@ def series_plot(df: pd.DataFrame, x: str, y: str, title: str = None, **kwargs):
 
 
 def scatter_plot(df: pd.DataFrame, x: str, y: str, title: str = None, trendline: str = None, **kwargs):
-    return px.scatter(df, x=x, y=y, title=title, trendline=trendline)
+    return px.scatter(df, x=x, y=y, title=title, trendline=trendline, **kwargs)
