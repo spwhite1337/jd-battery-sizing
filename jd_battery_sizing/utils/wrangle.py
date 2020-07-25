@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def daily_aggregation(df: pd.DataFrame, only_weekdays: bool = False) -> pd.DataFrame:
+def daily_aggregation(df: pd.DataFrame, only_weekdays: bool = False, **kwargs) -> pd.DataFrame:
     if only_weekdays:
         df = df[df['Timestamp'].dt.dayofweek < 5]
     return df. \
