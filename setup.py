@@ -18,6 +18,7 @@ setup(
         'flask-migrate',
         'flask-login',
         'plotly',
+        'nbformat ',
         'dash',
         'ipykernel',
         'tqdm',
